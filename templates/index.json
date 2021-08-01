@@ -26,7 +26,9 @@
         "button"
       ],
       "settings": {
-        "desktop_text_box_position": "flex-end",
+        "image": "shopify:\/\/shop_images\/woman-stands-in-the-kitchen-and-smiles-while-using-cell-phone.jpg",
+        "image_2": "shopify:\/\/shop_images\/a-mother-smiles-as-a-father-holds-their-baby.jpg",
+        "desktop_text_box_position": "center",
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
