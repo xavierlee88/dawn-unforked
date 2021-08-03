@@ -54,7 +54,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "Hello world"
           }
         },
         "text": {
@@ -66,7 +66,7 @@
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "click here",
             "button_link": ""
           }
         }
@@ -77,7 +77,8 @@
         "button"
       ],
       "settings": {
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/wood-handled-knife-surrounded-by-vegetables.jpg",
+        "height": "small",
         "color_scheme": "background-1",
         "layout": "image_first"
       }
