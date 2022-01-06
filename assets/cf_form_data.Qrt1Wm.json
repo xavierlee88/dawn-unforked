@@ -43,6 +43,7 @@
     "created_at": "2022-01-06T04:33:43Z",
     "updated_at": "2022-01-06T04:41:10Z",
     "revision_ids": [
+      "AdTgle5",
       "Y9T7Ng6",
       "rATylaK",
       "LbToeYb",
@@ -50,9 +51,9 @@
     ]
   },
   "revision": {
-    "id": "Y9T7Ng6",
-    "created_at": "2022-01-06T05:01:12Z",
-    "updated_at": "2022-01-06T05:01:12Z",
+    "id": "AdTgle5",
+    "created_at": "2022-01-06T05:23:04Z",
+    "updated_at": "2022-01-06T05:23:04Z",
     "embed_version": "4.8.4",
     "published_at": null,
     "fields": [
@@ -387,7 +388,74 @@
       }
     ],
     "rules": [
-
+      {
+        "id": 140988,
+        "title": "New rule 1",
+        "conditionChaining": "all",
+        "conditions": [
+          {
+            "operand": null,
+            "operator": "on_month",
+            "metadata": {
+              "comparand": "1",
+              "column": {
+                "id": "ZdFRRz",
+                "key": "birthday",
+                "label": "Birthday",
+                "dataType": "date",
+                "readOnly": false,
+                "dedicated": false,
+                "createdAt": "2022-01-06T04:35:18.318Z",
+                "archivedAt": null,
+                "expandedLabel": "Birthday",
+                "favorite": false
+              }
+            }
+          }
+        ],
+        "actions": [
+          {
+            "effect": "tag_customer",
+            "metadata": {
+              "value": "January"
+            }
+          }
+        ]
+      },
+      {
+        "id": 150873,
+        "title": "New rule 2",
+        "conditionChaining": "all",
+        "conditions": [
+          {
+            "operand": null,
+            "operator": "on_month",
+            "metadata": {
+              "comparand": "2",
+              "column": {
+                "id": "ZdFRRz",
+                "key": "birthday",
+                "label": "Birthday",
+                "dataType": "date",
+                "readOnly": false,
+                "dedicated": false,
+                "createdAt": "2022-01-06T04:35:18.318Z",
+                "archivedAt": null,
+                "expandedLabel": "Birthday",
+                "favorite": false
+              }
+            }
+          }
+        ],
+        "actions": [
+          {
+            "effect": "tag_customer",
+            "metadata": {
+              "value": "February"
+            }
+          }
+        ]
+      }
     ]
   }
 }
