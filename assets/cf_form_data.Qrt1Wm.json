@@ -43,17 +43,18 @@
     "created_at": "2022-01-06T04:33:43Z",
     "updated_at": "2022-01-06T04:41:10Z",
     "revision_ids": [
+      "Y9T7Ng6",
       "rATylaK",
       "LbToeYb",
       "d7TqVaZ"
     ]
   },
   "revision": {
-    "id": "rATylaK",
-    "created_at": "2022-01-06T04:40:16Z",
-    "updated_at": "2022-01-06T04:40:17Z",
+    "id": "Y9T7Ng6",
+    "created_at": "2022-01-06T05:01:12Z",
+    "updated_at": "2022-01-06T05:01:12Z",
     "embed_version": "4.8.4",
-    "published_at": "2022-01-06T04:40:17Z",
+    "published_at": null,
     "fields": [
       {
         "id": 372297,
@@ -78,12 +79,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -113,12 +114,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -153,12 +154,12 @@
             "errorMessage": "Please provide a valid email address"
           },
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -194,13 +195,13 @@
         },
         "validations": [
           {
+            "operator": "is_valid",
+            "comparand": null,
+            "errorMessage": "Please specify a valid date",
             "metadata": {
               "mandatory": true,
               "staticOperator": true
-            },
-            "operator": "is_valid",
-            "comparand": null,
-            "errorMessage": "Please specify a valid date"
+            }
           }
         ],
         "sensitive": null,
@@ -269,6 +270,37 @@
         "autotag": null
       },
       {
+        "id": 125461,
+        "dataColumn": {
+          "key": "default_address.country",
+          "label": "Country",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 6,
+        "type": "dropdown",
+        "stepId": 184035,
+        "default": "",
+        "label": "Country",
+        "placeholder": "Select a country...",
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "isCountryField": true
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": "country",
+        "autotag": null
+      },
+      {
         "id": 436363,
         "dataColumn": {
           "key": "password",
@@ -276,7 +308,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 6,
+        "position": 7,
         "type": "text",
         "stepId": 184035,
         "default": "",
@@ -291,24 +323,24 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           },
           {
+            "operator": "longer_than",
+            "comparand": 5,
+            "errorMessage": "Password is too short",
             "metadata": {
               "mandatory": true,
               "staticOperator": true,
               "comparandFieldProps": {
                 "min": 5
               }
-            },
-            "operator": "longer_than",
-            "comparand": 5,
-            "errorMessage": "Password is too short"
+            }
           }
         ],
         "sensitive": true,
@@ -323,7 +355,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 7,
+        "position": 8,
         "type": "password_confirmation",
         "stepId": 184035,
         "default": "",
