@@ -3,7 +3,7 @@
     "id": "Qrt1Wm",
     "name": "Registration",
     "handle": "registration-4428",
-    "theme_id": null,
+    "theme_id": "125672489159",
     "settings": {
       "locales": {
         "back": "Back",
@@ -28,6 +28,7 @@
         "reset_password_email_sent": "Check your inbox for a link to reset your password.",
         "reset_password_too_many_attempts": "You tried to reset your password too many times. Please wait and try again later."
       },
+      "customCSS": ".cf-field input[type=text], .cf-field input[type=email], .cf-field input[type=number], .cf-field input[type=tel], .cf-field input[type=password], .cf-field textarea {\n\n    border-style:solid !important;\n    border-color:black !important;\n    \n}\n",
       "whitelistedTags": "",
       "markRequiredFields": false,
       "displayCancelButton": true,
@@ -37,19 +38,20 @@
       "goBackAfterCancelButtonClick": false
     },
     "install_locations": [
-
+      "register"
     ],
     "created_at": "2022-01-06T04:33:43Z",
-    "updated_at": "2022-01-06T04:33:43Z",
+    "updated_at": "2022-01-06T04:40:16Z",
     "revision_ids": [
+      "rATylaK",
       "LbToeYb",
       "d7TqVaZ"
     ]
   },
   "revision": {
-    "id": "LbToeYb",
-    "created_at": "2022-01-06T04:35:18Z",
-    "updated_at": "2022-01-06T04:35:18Z",
+    "id": "rATylaK",
+    "created_at": "2022-01-06T04:40:16Z",
+    "updated_at": "2022-01-06T04:40:16Z",
     "embed_version": "4.8.4",
     "published_at": null,
     "fields": [
@@ -76,12 +78,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -111,12 +113,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -151,12 +153,12 @@
             "errorMessage": "Please provide a valid email address"
           },
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -192,13 +194,13 @@
         },
         "validations": [
           {
+            "operator": "is_valid",
+            "comparand": null,
+            "errorMessage": "Please specify a valid date",
             "metadata": {
               "mandatory": true,
               "staticOperator": true
-            },
-            "operator": "is_valid",
-            "comparand": null,
-            "errorMessage": "Please specify a valid date"
+            }
           }
         ],
         "sensitive": null,
@@ -289,24 +291,24 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           },
           {
+            "operator": "longer_than",
+            "comparand": 5,
+            "errorMessage": "Password is too short",
             "metadata": {
               "mandatory": true,
               "staticOperator": true,
               "comparandFieldProps": {
                 "min": 5
               }
-            },
-            "operator": "longer_than",
-            "comparand": 5,
-            "errorMessage": "Password is too short"
+            }
           }
         ],
         "sensitive": true,
